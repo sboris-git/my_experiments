@@ -7,12 +7,12 @@ echo "# sql_test" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/SBoris10/sql_test.git
+git remote add origin https://github.com/sboris-git/sql_test.git
 git push -u origin master
 
 
 …or push an existing repository from the command line
-git remote add origin https://github.com/SBoris10/sql_test.git
+git remote add origin https://github.com/sboris-git/sql_test.git
 git push -u origin master
 
 
