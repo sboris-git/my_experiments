@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28bbe33b-4f71-40a5-8849-529a7b6cd899" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sql_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/Grammarly/How to quickly check and count English grammar errors in Python_ - Stack Overflow.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/Selenium/C. Brown - An Introduction to Testing Web Applications with twill and Selenium-O'Reilly Media, Inc. (2007).chm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python/Selenium/Prashanth - Selenium Essentials _ get to grips with automated web testing with the amazing power of Selenium (2015).pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite_python.py" afterDir="false" />
-    </list>
+    <list default="true" id="28bbe33b-4f71-40a5-8849-529a7b6cd899" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +125,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3293718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
