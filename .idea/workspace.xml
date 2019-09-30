@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28bbe33b-4f71-40a5-8849-529a7b6cd899" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sql_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sql_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chinook.db" beforeDir="false" afterPath="$PROJECT_DIR$/chinook.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlite_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/sqlite_python.py" afterDir="false" />
-    </list>
+    <list default="true" id="28bbe33b-4f71-40a5-8849-529a7b6cd899" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +102,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SQL in Progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL in Progress" />
   </component>
   <component name="masterDetails">
     <states>
