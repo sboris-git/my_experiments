@@ -33,6 +33,11 @@ res = cursor.fetchall()
 for r in res:
     print(r)
 
+# never forget this, if you want the changes to be saved:
+#connection.commit()
+
+connection.close()
+
 cursor.execute('''
 SELECT
    albumid, COUNT(*)
