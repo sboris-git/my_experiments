@@ -1,6 +1,8 @@
 import sqlite3
 # https://datascienceplus.com/sqlite-in-python/?fbclid=IwAR04v8Y3f8obMpU0Y0ezg7DT6g_ywDZQDHbCjVL4W8W3GaPaMWA90daSkao
 # https://www.youtube.com/watch?v=2HVMiPPuPIM
+# https://www.geeksforgeeks.org/sql-tutorial/
+# https://www.w3schools.com/sql/sql_top.asp
 connection = sqlite3.connect("chinook.db")
 cursor = connection.cursor()
 # format_str = """DELETE FROM Customer"""
@@ -72,7 +74,7 @@ cursor = connection.cursor()
 # cursor.execute(sql_command)
 #
 
-# Not full Emulation of Right Join
+# Emulation of Right Join
 # sql_command = '''
 # SELECT * FROM City Left Join Customer
 # on Customer.CityId=City.CityId'''
@@ -83,7 +85,27 @@ cursor = connection.cursor()
 # SELECT * FROM City Full Join Customer
 # on Customer.CityId=City.CityId'''
 # cursor.execute(sql_command)
+sql_command = '''
+Select FirstName, City, Country, SupportRepId from customers
+Where SupportRepId Not In (Select MAX(SupportRepId) from customers)
+Order by Country ASC
+LIMIT 5'''
 
+'''
+SELECT s.FirstName, s.City, s.Country, s.SupportRepId, genres.name FROM 
+(Select FirstName, City, Country, SupportRepId from customers
+Where SupportRepId Not In (Select MAX(SupportRepId) from customers)
+Order by Country ASC
+LIMIT 5) s 
+Inner Join genres on s.SupportRepId=genres.genreId
+'''
+# sql_command = '''
+# Select * from customers
+# Where SupportRepId = (Select MAX(SupportRepId) from customers)
+# Order by Country ASC
+# LIMIT 5
+# '''
+cursor.execute(sql_command)
 print("fetchall:")
 result = cursor.fetchall()
 for r in result:
