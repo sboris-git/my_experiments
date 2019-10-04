@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e045dfed-54db-4f43-b665-a1ded5d4a7ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sql_create_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_create_insert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/firefox_selenium_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium/selectors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/button.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/button2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/button3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/hide_show_element_byID.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sql_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sql_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chinook.db" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/chinook.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chinook.zip" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/chinook.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company.db" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/company.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/sql_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_create_insert.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/sql_create_insert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite-sample-database-diagram-color.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/sqlite-sample-database-diagram-color.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite-sample-database-diagram.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/sqlite-sample-database-diagram.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sqlite_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/sqlite_python.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,28 +26,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sql_create_insert.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-406">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/sql_create_insert.py" />
-      </list>
-    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -43,35 +47,20 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="405" />
-    <option name="y" value="169" />
-    <option name="width" value="875" />
-    <option name="height" value="468" />
-  </component>
+  <component name="ProjectId" id="1RbTpI1I4Jye5xMKxS8RSbuMEQh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sql_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sql_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Selenium" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SQL" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Selenium" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,8 +74,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="sql_create_insert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.firefox_selenium_test">
+    <configuration name="Sel_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="sql_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,11 +83,95 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/test/Sel_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="firefox_selenium_test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sql_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Selenium" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sql_create_insert.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/firefox_selenium_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="firefox_selenium_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sql_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/test/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/test/firefox_selenium_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="selectors" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sql_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/test/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Selenium" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/selectors.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="selenium_travel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="sql_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Selenium" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Selenium/selenium_travel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sql_create_insert" />
+        <item itemvalue="Python.firefox_selenium_test" />
+        <item itemvalue="Python.selenium_travel" />
+        <item itemvalue="Python.selectors" />
+        <item itemvalue="Python.firefox_selenium_test (1)" />
+        <item itemvalue="Python.Sel_test" />
       </list>
     </recent_temporary>
   </component>
@@ -126,36 +203,18 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql_create_insert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="masterDetails">
     <states>
