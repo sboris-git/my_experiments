@@ -1,1 +1,1 @@
-# sql_test
+# Study and test place

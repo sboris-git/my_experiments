@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Text Input Control</title>
+   </head>
+   <!-- http://www.tutorialspoint.com/html/html_forms.htm --> 	
+   <body>
+      <form >
+         First name: <input type = "text" name = "first_name" />
+         <br>
+         Last name: <input type = "text" name = "last_name" />
+      </form>
+
+      <form >
+         User ID : <input type = "text" name = "user_id" />
+         <br>
+         Password: <input type = "password" name = "password" />
+      </form>
+
+      <form>
+         Description : <br />
+         <textarea rows = "5" cols = "50" name = "description">
+            Enter description here...
+         </textarea>
+      </form>
+
+      <form>
+         <input type = "checkbox" name = "maths" value = "on"> Maths
+         <input type = "checkbox" name = "physics" value = "on"> Physics
+      </form>
+
+      <form>
+         <input type = "radio" name = "subject" value = "maths"> Maths
+         <input type = "radio" name = "subject" value = "physics"> Physics
+      </form>
+
+      <form>
+         <select name = "dropdown">
+            <option value = "Maths" selected>Maths</option>
+            <option value = "Physics">Physics</option>
+         </select>
+      </form>
+
+      <form>
+         <input type = "file" name = "fileupload" accept = "image/*" />
+      </form>
+
+      <form>
+         <p>This is page 10</p>
+         <input type = "hidden" name = "pagename" value = "10" />
+         <input type = "submit" name = "submit" value = "Submit" />
+         <input type = "reset" name = "reset"  value = "Reset" />
+      </form>
+
+   </body>
+	
+</html>

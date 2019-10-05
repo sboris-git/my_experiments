@@ -1,0 +1,1 @@
+https://www.edureka.co/community/7353/get-text-using-selenium-web-driver-in-python
