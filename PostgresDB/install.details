@@ -1,0 +1,24 @@
+https://www.fullstackpython.com/blog/postgresql-python-3-psycopg2-ubuntu-1604.html
+$ sudo apt-get install postgresql libpq-dev postgresql-client postgresql-client-common
+$ sudo -i -u postgres
+ createdb testpython
+ psql testpython
+
+which python3
+
+# specify the system python3 installation
+source ~/venvs/postgrestest/bin/activate
+pip install psycopg2 #doesnt want to install
+
+
+https://stackoverflow.com/questions/2748607/how-to-thoroughly-purge-and-reinstall-postgresql-on-ubuntu?rq=1
+https://stackoverflow.com/questions/49120613/python-postgresql-create-database-and-populate-table-from-pandas-dataframe
+https://www.fullstackpython.com/blog/postgresql-python-3-psycopg2-ubuntu-1604.html
+http://www.gplivna.eu/papers/sql_join_types.htm
+https://www.tutorialspoint.com/javascript/javascript_enabling.htm
+
+###########
+https://stackoverflow.com/questions/49120613/python-postgresql-create-database-and-populate-table-from-pandas-dataframe
+
+https://www.dotnetcurry.com/software-gardening/1365/solid-principles
+https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
