@@ -1,9 +1,9 @@
 import time
-import urllib.parse as urlparse
 from selenium import webdriver
-from selenium.webdriver.common.by import By
+# import urllib.parse as urlparse
+# from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys # to open a link in new tab
-from selenium.webdriver.common.action_chains import ActionChains # scroll
+# from selenium.webdriver.common.action_chains import ActionChains # scroll
 
 
 # https://selenium-python.readthedocs.io/locating-elements.html
@@ -15,6 +15,7 @@ from selenium.webdriver.common.action_chains import ActionChains # scroll
 
 string = 'beautiful places in the world' # 'search phrase'
 url = 'https://www.google.com/'
+# driver = webdriver.Chrome(r'/home/stable/Apps/chromedriver')  # Optional argument, if not specified will search path.
 driver = webdriver.Chrome('/home/boris/Apps/chromedriver')  # Optional argument, if not specified will search path.
 # export PATH="$HOME/bin:$PATH"
 # driver.get('http://www.google.com/')
@@ -36,9 +37,6 @@ driver = webdriver.Chrome('/home/boris/Apps/chromedriver')  # Optional argument,
 # par = urlparse.parse_qs(urlparse.urlparse(href).query)
 # print(par['q'][0], par['source'][0])
 #
-# driver.quit()
-# {'q': [string], 'tbm': ['isch'], 'source': ['iu'], 'ictx': ['1'], 'fir': ['AL1xhMQd77lbnM%3A%2CyG-4MRajkzD0zM%2C_'], 'vet': ['1'], 'usg': ['AI4_-kTMYlaLLILw5k2a79ryuALAhh1Ekg'], 'sa': ['X'], 'ved': ['2ahUKEwiO39v4joDlAhXwoIsKHetABwcQ9QEwAHoECAQQAw']}
-
 linkList = []
 driver.get(url)
 search_box = driver.find_element_by_name('q').send_keys(string)#\n.click()
@@ -59,12 +57,7 @@ elems = driver.find_elements_by_xpath('.//a')
 target_link = driver.find_element_by_partial_link_text(string) # Ok
 print(target_link.get_attribute("href"))
 # target_link.click()
-# open in new tab
-# body = driver.find_element_by_tag_name("body")
-# body.send_keys(Keys.CONTROL + 't')
-# target = driver.find_elements_by_id('navcnt')
-# target = driver.find_element_by_partial_link_text('Уперед')
-# target = driver.find_element_by_partial_link_text('Завантаження')
+
 # actions = ActionChains(driver)
 # actions.move_to_element(target)
 # actions.perform()
@@ -91,6 +84,38 @@ class_name = 'dtviD'
 content = driver.find_elements_by_xpath('//span[contains(@class, "dtviD")]') # Ok
 # XPath: //div[contains(@class, 'article-heading')]
 [print(item.text) for item in content]
+
+# //*[@id="rg_s"]/div[2]/a[2]/div[1]
+# Next jump mVDMnf nJGrxf
+# wonder = driver.find_elements_by_xpath('//span[contains(@class, "mVDMnf nJGrxf")]')#does not work
+wonder = driver.find_element_by_xpath('//*[@id="rg_s"]/div[2]/a[2]/div[1]')
+link_to_go = driver.find_element_by_partial_link_text(wonder.text)
+print(wonder.text, link_to_go.get_attribute('href'))
+link_to_go.click()
+time.sleep(5)
+# open in new tab
+body = driver.find_element_by_tag_name("body")
+body.send_keys(Keys.CONTROL + '2')
+# target = driver.find_elements_by_id('navcnt')
+# target = driver.find_element_by_partial_link_text('amazing')
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);") # to scroll to the bottom of the page.
+time.sleep(2)
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+time.sleep(2)
+driver.execute_script("window.scrollTo(0, 0);") # to scroll back to the top of the page.
+# target = driver.find_element_by_partial_link_text('Завантаження')
+
+# //Create an ArrayList and store the open tabs
+# ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+# //below code will switch to new tab
+# driver.switchTo().window(tabs.get(1));
+# //perform whatever actions you want in new tab then close it
+# driver.close();
+# //Switch back to your original tab
+# driver.switchTo().window(tabs.get(0));
+
+time.sleep(5)
+
 
 # content = driver.find_elements(By.CLASS_NAME, class_name)
 # content = driver.find_elements_by_css_selector('//span[contains(@class, "dtviD")]') # Ok
