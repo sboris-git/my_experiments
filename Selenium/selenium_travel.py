@@ -15,8 +15,9 @@ from selenium.webdriver.common.keys import Keys # to open a link in new tab
 
 string = 'beautiful places in the world' # 'search phrase'
 url = 'https://www.google.com/'
-driver = webdriver.Chrome(r'/home/stable/Apps/chromedriver')  # Optional argument, if not specified will search path.
-# driver = webdriver.Chrome('/home/boris/Apps/chromedriver')  # Optional argument, if not specified will search path.
+# driver = webdriver.Chrome(r'/home/stable/Apps/chromedriver')  # Optional argument, if not specified will search path.
+driver = webdriver.Chrome('/home/boris/Apps/chromedriver')  # Optional argument, if not specified will search path.
+# export PATH="$HOME/bin:$PATH"
 # driver.get('http://www.google.com/')
 # time.sleep(1) # Let the user actually see something!
 # search_box = driver.find_element_by_name('q').send_keys(string)#\n.click()
