@@ -1,9 +1,12 @@
 import psycopg2
 
+
 conn = psycopg2.connect(database="testdb", user = "postgres", password = "SBoris", host = "127.0.0.1", port = "5432")
 
 print("Opened database successfully")
-
+# cur = conn.cursor()
+# cur.execute('''DROP TABLE COMPANY''')
+#
 # cur = conn.cursor()
 # cur.execute('''CREATE TABLE COMPANY
 #       (ID INT PRIMARY KEY     NOT NULL,
@@ -24,15 +27,15 @@ print("Opened database successfully")
 #       VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 )")
 # conn.commit()
 
-# cur = conn.cursor()
-# sql = '''
-# SELECT * FROM COMPANY;
-# '''
-# cur.execute(sql)
-# rows = cur.fetchall()
-# print('Database contains {} records'.format(len(rows)))
-# for row in rows:
-#     print(row)
-# print("Records created successfully")
+cur = conn.cursor()
+sql = '''
+SELECT * FROM COMPANY;
+'''
+cur.execute(sql)
+rows = cur.fetchall()
+print('Database contains {} records'.format(len(rows)))
+for row in rows:
+    print(row)
+print("Records created successfully")
 # conn.commit()
 conn.close()
