@@ -31,25 +31,21 @@ db_config = {
             'password': "SBoris",                # password
             'database': "dvdrental",             # database
 }
-query_sql = '''SELECT * FROM actor LIMIT 5'''
+query_sql = '''SELECT * FROM film LIMIT 5'''
 
 obj1 = DB(db_config)
 rows = obj1.print_query(query_sql)
+# BOOKS(id, author, name, genre)
+# READ_RETURN(book_id, user_id, onhand, quantity)
+# HUMAN(id, first_name, midle_name, last_name)
 
-''' actor – stores actors data including first name and last name.
-    film – stores films data such as title, release year, length, rating, etc.
-    film_actor – stores the relationships between films and actors.
-    category – stores film’s categories data.
-    film_category- stores the relationships between films and categories.
-    store – contains the store data including manager staff and address.
-    inventory – stores inventory data.
-    rental – stores rental data.
-    payment – stores customer’s payments.
-    staff – stores staff data.
-    customer – stores customers data.
-    address – stores address data for staff and customers
-    city – stores the city names.
-    country – stores the country names.'''
+''' +actor – (actor_id, first_name, last_name, last_update) 
+            stores actors data including first name and last name.
+    +category -- (category_id, name, last_update) 
+            – stores film’s categories data.
+    +country – (country_id, country, last_update) stores the country names.
+    +language -- (language_id, name, last_update)
+    '''
 # for item in rows:
 #     print(item)
 
