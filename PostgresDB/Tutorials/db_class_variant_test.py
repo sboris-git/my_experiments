@@ -60,10 +60,10 @@ obj.count_frequency(query2)
 '''
 
 
-Write code for next requirements:
-  2. Write class for getting data from tables
-  3. Write class for counting how often any human has read each book
-=======
+# Write code for next requirements:
+#   2. Write class for getting data from tables
+#   3. Write class for counting how often any human has read each book
+# =======
 db_config = {
             'host': "127.0.0.1",                 # database host
             'port': 5432,                        # port
