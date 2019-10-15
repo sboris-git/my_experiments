@@ -4,6 +4,12 @@ $ sudo -i -u postgres
  createdb testpython
  psql testpython
 
+# import sample database
+$ cd /opt/PostgreSQL/10/bin/
+# /home/boris/dvdrental/dvdrental.tar # and the path in restore.sql should be /home/boris/dvdrental
+$ pg_restore -U postgres -d dvdrental /home/boris/dvdrental/dvdrental.tar #  as non root user
+# done!
+
 which python3
 
 # specify the system python3 installation
