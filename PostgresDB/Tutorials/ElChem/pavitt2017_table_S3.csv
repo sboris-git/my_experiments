@@ -1,0 +1,19 @@
+"No.","Name","Trivial Name","CAS-RN","Source","Purity %","pKa(a)","SMILES"
+1,"aniline","NA","62-53-3","Aldrich","-99,5","4,64","Nc1ccccc1"
+2,"2-methylaniline","o-toluidine","95-53-4","Alfa Aesar",-99,"4,48","Cc1ccccc1N"
+3,"3-methylaniline","m-toluidine","108-44-1","Acros",-99,"4,86",
+4,"4-methylaniline","p-toluidine","106-49-0","Alfa Aesar",-99,"4,99",
+5,"2-methoxyaniline","o-anisidine","90-04-0","Acros",-99,"4,42",
+6,"3-methoxyaniline","m-anisidine","536-90-3","Acros",-99,"4,01",
+7,"4-methoxyaniline","p-anisidine","104-94-9","Acros",-99,"5,11",
+8,"3-aminobenzoic acid","3-ABA",1999-05-08,"Sigma","NA","3,27",
+9,"4-aminobenzoic acid","4-ABA","150-13-0","Sigma",-99,"2,69",
+10,"2-nitroaniline","NA","88-74-4","Alfa Aesar",-98,"0,25",
+11,"3-nitroaniline","NA",1999-09-02,"Acros",-98,"1,72",
+12,"4-nitroaniline","NA",0100-01-06,"Acros",-99,"1,43",
+13,"2-chloroaniline","NA","95-51-2","Alfa Aesar",-98,"2,79",
+14,"3-chloroaniline","NA","108-42-9","Acros",-99,"3,47",
+15,"4-chloroaniline","NA","106-47-8","Acros",-98,"3,49",
+16,"2-methyl-5-nitroaniline","NA","99-55-8","Acros",-96,"1,73",
+17,"4-methyl-3-nitroaniline","NA","119-32-4","Acros",-97,"2,43",
+18,"2-methoxy-5-nitroaniline","NA","99-59-2","TCI",-98,"1,83",

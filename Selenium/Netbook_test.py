@@ -1,5 +1,6 @@
 import time
 from selenium import webdriver
+
 # pass
 string = 'beautiful places in the world' # 'search phrase'
 url = 'https://www.google.com/'
@@ -11,7 +12,7 @@ driver.find_element_by_name('btnK').submit()
 
 time.sleep(2)
 elems = driver.find_elements_by_xpath('.//a')
-target_link = driver.find_element_by_partial_link_text(string) # Ok
+target_link = driver.find_element_by_partial_link_text(string)  # Ok
 print(target_link.get_attribute("href"))
 time.sleep(1)
 
