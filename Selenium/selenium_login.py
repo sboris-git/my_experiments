@@ -1,40 +1,27 @@
 import time
 from selenium import webdriver
-# import urllib.parse as urlparse
-from selenium.webdriver.common.by import By
 
-username = 'boris.v.skip@gmail.com' # login
-paswd = "*******"
+username = 'username' # login
+paswd = "********"
 url = 'https://www.linkedin.com/login'
-pause = 2 # sec
-driver = webdriver.Chrome(r'/home/stable/Apps/chromedriver')
-
-# driver.get('http://www.google.com/')
-# search_box = driver.find_element_by_name('q').send_keys(string)#\n.click()
-# #search_box.submit()
-# #time.sleep(2) #
+pause = 2  # sec
+driver = webdriver.Chrome('/home/stable/Apps/chromedriver')
 
 driver.get(url)
-search_box = driver.find_element_by_id('username')  # .send_keys(string)
-# https://dzone.com/articles/selenium-java-tutorial-how-to-test-login-process
-# driver.findElement(By.id(“password”));
-# WebElement password=driver.findElement(By.id(“password”));
-# driver.findElement(By.xpath(“//button[text()=’Sign in’]”));
-# import org.openqa.selenium.WebElement;
-# https://crossbrowsertesting.com/blog/test-automation/automate-login-with-selenium/
-
-# WebElement login= driver.findElement(By.xpath(“//button[text()=’Sign in’]”));
-# username.sendKeys(“xyz@gmail.com”);
-# password.sendKeys(“exampleAboutSelenium123”);
-# login.click();
-# actualUrl="https://www.linkedin.com/feed/";
-#   String expectedUrl= driver.getCurrentUrl();
-#   Assert.assertEquals(expectedUrl,actualUrl);
-
-driver.find_element_by_name('btnK').submit()
-target_link = driver.find_element_by_partial_link_text(string) # Ok
-print(target_link.get_attribute("href"))
+print("Locating and fill in username")
+username_elem = driver.find_element_by_id('username')
+username_elem.send_keys(username)
 time.sleep(pause)
+
+print("Locating and fill in password form...")
+passwd_elem = driver.find_element_by_id('password')
+passwd_elem.send_keys(paswd)
+time.sleep(pause)
+
+print("Locating a Sign in button and clicking it...")
+xpath = '//button[contains(@aria-label,"Sign in")]'
+driver.find_element_by_xpath(xpath).click()
+time.sleep(pause*2)
 
 
 driver.quit()
