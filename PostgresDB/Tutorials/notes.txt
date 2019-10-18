@@ -105,6 +105,104 @@ ORDER by rental_rate DESC,
 	title;
 
 
+# Syntax of USING:
+# https://www.w3resource.com/PostgreSQL/postgresql-inner-join.php
+
+SELECT [* | column_list]
+FROM table1
+INNER JOIN table2
+ON table1.column_name=table2.column.name; 
+
+# OR
+# Syntax:
+SELECT [* | column_list]
+FROM table1
+INNER JOIN table2
+USING (column.name);
+
+# OR
+SELECT [* | column_list]
+FROM table1,table2
+WHERE table.column
+
+# INNER JOIN play
+SELECT
+	*
+FROM ((
+	film_category
+	INNER JOIN film
+		USING(film_id)
+	)
+	INNER JOIN category 
+		USING(category_id)
+	)
+WHERE name in ('SCi-Fi', 'Action')
+ORDER by name
+;
+
+
+SELECT
+	title,
+	name,
+	description,
+	rental_duration,
+	special_features,
+	fulltext
+	
+FROM ((
+	film_category
+	INNER JOIN film
+		USING(film_id)
+	)
+	INNER JOIN category 
+		USING(category_id)
+	)
+WHERE (name in ('SCi-Fi','Action')) AND (rental_rate > 2.9)
+ORDER by rental_duration DESC
+OFFSET 20
+FETCH FIRST 10 ROW ONLY
+;
+	
+
+# Serial Join of four tables to get actor_name, film_title, rental_duration in one table 
+SELECT
+	title,
+	first_name || '  ' || last_name,
+	name,
+	description,
+	rental_duration,
+	special_features,
+	fulltext
+	
+FROM ((((
+	film_category
+	INNER JOIN film
+		USING(film_id)
+	)
+	INNER JOIN category 
+		USING(category_id)
+	)
+	INNER JOIN film_actor 
+	  	USING(film_id)
+	)
+	INNER JOIN actor 
+	  	USING(actor_id)  
+	)
+WHERE (name in ('SCi-Fi','Action')) AND (rental_rate > 2.9)
+ORDER by rental_duration DESC
+OFFSET 10
+FETCH FIRST 10 ROW ONLY
+;
+
+
+	
+--SELECT * FROM film FETCH FIRST 10 ROW ONLY;
+--SELECT HUMANS.id, HUMANS.begin_name, HUMANS.end_name, \
+--       BOOKS.id, BOOKS.author, BOOKS.name, \
+--       READ_RETURN.id_user, READ_RETURN.id_book, READ_RETURN.is_returned
+--FROM ((HUMAN
+--INNER JOIN READ_RETURN ON HUMANS.id = READ_RETURN.id_user)
+--INNER JOIN BOOKS ON BOOKS.id = READ_RETURN.id_book);
 
 
 =========================================
