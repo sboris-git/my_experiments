@@ -105,6 +105,18 @@ ORDER by rental_rate DESC,
 	title;
 
 
+SELECT * 
+FROM 
+	actor 
+WHERE first_name like '%e'
+OFFSET 4
+FETCH FIRST 2 ROWS ONLY;
+
+
+
+# Group by
+
+The GROUP BY clause must appear right after the FROM or WHERE clause. Followed by the GROUP BY clause is one column or a list of comma-separated columns. Beside the table column, you can also use an expression with the GROUP BY clause.
 
 
 =========================================
