@@ -29,7 +29,8 @@ print("Opened database successfully")
 
 cur = conn.cursor()
 sql = '''
-SELECT * FROM COMPANY;
+SELECT * FROM COMPANY
+ORDER BY name;
 '''
 cur.execute(sql)
 rows = cur.fetchall()
