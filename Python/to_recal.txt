@@ -1,0 +1,2 @@
+https://realpython.com/introduction-to-python-generators/#understanding-generators
+https://data-flair.training/blogs/python-generator/
