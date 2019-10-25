@@ -6,7 +6,10 @@ paswd = "********"
 url = 'https://www.linkedin.com/login'
 pause = 2  # sec
 # driver = webdriver.Chrome('/home/stable/Apps/chromedriver')
-driver = webdriver.Chrome('/home/boris/Apps/')
+driver = webdriver.Chrome(r'/home/boris/Apps/chromedriver')
+
+# Move the window to the top middle of the primary monitor
+driver.set_window_position(900, 0)
 
 driver.get(url)
 print("Locating and fill in username")
@@ -22,12 +25,19 @@ time.sleep(pause)
 print("Locating a Sign in button and clicking it...")
 xpath = '//button[contains(@aria-label,"Sign in")]'
 driver.find_element_by_xpath(xpath).click()
-time.sleep(pause*2)
+time.sleep(pause)
 
 actualUrl = "https://www.linkedin.com/feed/"
-expectedUrl = driver.getCurrentUrl()
-# Assert.assertEquals(expectedUrl, actualUrl)
-Assert.assertEquals('Url', 'Url')
-print(Assert.assertEquals('Url', 'Url'))
+expectedUrl = driver.current_url
+# driver.assertEquals(expectedUrl, actualUrl)
+# assertEqual is a method that belongs to the class TestCase from the unittest module (python unittest docs)
+try:
+    assert expectedUrl in actualUrl
+    print("Assertion test completed successfully")
+except AssertionError:
+    print('Assertion test failed')
+
+# driver.assertEquals('Url', 'Url')
+print()
 
 driver.quit()
