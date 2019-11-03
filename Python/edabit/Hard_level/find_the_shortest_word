@@ -1,0 +1,44 @@
+# Find the Shortest Word(s) in a Sentence
+# Create a function that accepts a string as an argument. Find its shortest word(s) and return
+# them as a list sorted alphabetically (if there are multiple shortest words).
+# Notes
+# Periods, commas and other special characters don't count as part of a word's length.
+# Remember to sort the list of words alphabetically before returning your result.
+# Return words in lowercase only.
+
+import re
+
+
+def find_shortest_words(txt):
+
+    txt = re.sub( r'[^\w\s]', '', txt )
+    lenght = len(txt)
+    list_from_string = txt.split()
+
+    shortest = []
+
+    for word in list_from_string:
+
+        if lenght > len(word) and word.isalpha():
+            lenght = len(word)
+            shortest = [word.lower()]
+        elif lenght == len(word) and word.isalpha():
+            lenght = len(word)
+            shortest.append(word.lower())
+
+    return sorted(shortest)
+
+
+# Examples
+# print(find_shortest_words("I think the solution is fairly obvious."))
+print(find_shortest_words("I think the solution is fairly obvious.") == ["i"])
+
+print(find_shortest_words("Chase two rabbits, catch none.") == ["two"])
+# print(find_shortest_words("Chase two rabbits, catch none."))
+
+print(find_shortest_words("We become what we think about. ") == ["we", "we"])
+print(find_shortest_words("We become what we think about. be, is, to, to"))
+
+
+# print(find_shortest_words("The quick brown fox jumped over the lazy dogs back."))
+print(find_shortest_words("The quick brown fox jumped over the lazy dogs back.") == ["fox", "the", "the"])
