@@ -1,10 +1,6 @@
          .wrapper{
             display:grid;
             grid-template-columns: 4fr 1fr;
-            /*
-            grid-column-gap:1em;
-            grid-row-gap:1em;
-            */
             grid-gap:1em;
             grid-auto-rows:minmax(100px, auto);
          }
@@ -14,47 +10,19 @@
             padding:1em;
          }
 
-         .wrapper > div:nth-child(odd){
-            background:#ddd;
-         }
-
          .subwrapper{
             display:grid;
             grid-template-columns: 3fr 4fr;
-            /*
-            grid-column-gap:1em;
-            grid-row-gap:1em;
-            */
             grid-gap:1em;
-            grid-auto-rows:minmax(100px, auto);
          }
 
          .subwrapper > div{
-            background:#eee;
+            background:#aee;
             padding:1em;
          }
 
-         .subwrapper > div:nth-child(odd){
-            background:#ddd;
-         }
-
-
-         .nested{
+          .sex{
             display:grid;
-            grid-template-columns: 3fr 4fr;
-            /*
-            grid-column-gap:1em;
-            grid-row-gap:1em;
-            */
+            grid-template-columns: 4fr 9fr;
             grid-gap:1em;
-            grid-auto-rows:minmax(100px, auto);
-         }
-
-         .nested > div{
-            background:#eee;
-            padding:1em;
-         }
-
-         .nested > div:nth-child(odd){
-            background:#ddd;
          }

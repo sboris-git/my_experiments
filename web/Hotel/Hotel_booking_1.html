@@ -13,26 +13,33 @@
 
       <div class="wrapper">
          <div class="subwrapper">
-            <div>
-               <form >
-                  First name: <input type = "text" name = "first_name" />
+            <div id="textbox group" align="right">
+               <form>
+                  First name: <input id="FirstName" type = "text" name = "first_name" />
                    <br> <br>
-                  Last name: <input type = "text" name = "last_name" />
+                  Last name: <input id="LastName" type = "text" name = "last_name" />
                   <br> <br>
-                  Password: <input type = "password" name = "password" />
+                  Password: <input id="password" type = "password" name = "password" />
                </form>
             </div>
 
             <div>
-               Text 2 here
+               Text 2
             </div>
 
-            <div>
+            <div id="nested radio_buttons" translate="">
                Grid nested here
-               <div>
+               <div id='radio' align="center">
                  <br>
-                  <input type = "radio" name = "subject" value = "maths"> Maths
-                  <input type = "radio" name = "subject" value = "physics"> Physics
+                  <div id="sex" align="left">
+                     Sex:
+                  </div>
+
+                  <div align="center">
+                     Male <input type = "radio" name = "subject" value = "male">
+                     Female <input type = "radio" name = "subject" value = "female">
+                  </div>
+
                </div>
 
                <div class="nested">
@@ -43,7 +50,7 @@
             </div>
 
             <div>
-               Text 4 here
+               Text 4 
             </div>
 
          </div>

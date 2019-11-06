@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hotel reservation</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="scripts.js"></script>
+   </head>
+	
+   <body>
+
+      <h3 title = "hotel" align = "center">Hotel reservation form</h3>
+      <p><a href = 'https://www.youtube.com/watch?v=jV8B24rSN5o'> Where it comes from </a></p>
+
+      <div class="wrapper">
+
+         <div class="subwrapper">
+
+            <div id="textbox group" align="right">
+
+               <div class="label">First name:<input id="FirstName" type = "text" name = "first_name" /></div>
+                   <br>
+               <div class="label">Last Name:<input id="LastName" type = "text" name = "last_name" /></div>
+                  <br>
+               <div class="label">Password: <input id="password" type = "password" name = "password" /></div>
+
+            </div>
+
+
+               <div class="sex">
+                  <div class='label' align="center">Sex:</div>
+                  <div id="radio" align="left">
+                  Male <input type = "radio" name = "subject" value = "male">
+                  Female <input type = "radio" name = "subject" value = "female">
+                  </div>
+               </div>
+
+               <div class="born">
+                  <form action="/action_page.php">
+                    <div class="label">Birthday:</div>
+                    <input type="date" name="bday">
+                    <input type="submit">
+                  </form>
+               </div>
+
+               <div id="service">
+                  <div class="label">Custom service</div>
+                     <div class="custom_service">
+                           <input type = "checkbox" name = "breakfast" value = "on"> Breakfast<br>
+                           <input type = "checkbox" name = "skii transfer" value = "off"> Skii transfer<br>
+                           <input type = "checkbox" name = "gym and pool pass" value = "off"> Gym and pool pass<br>
+                           <input type = "checkbox" name = "fridge" value = "off"> Fridge<br>
+                           <input type = "checkbox" name = "skii pass" value = "off"> Skii pass<br>
+
+                     </div>
+
+                     <div class="dropdown_available_rooms">
+                        <form>
+                        <select name = "dropdown_available">
+                           <option value = "avail" selected>1</option>
+                           <option value = "av">2</option>
+                           <option value = "Physics">3</option>
+                           <option value = "Physics">4</option>
+                        </select>
+                        </form>
+
+                     </div>
+
+                     <div class="dropdown_adults_count">
+                        <form>
+                        <select name = "dropdown_available">
+                           <option value = "Maths" selected>1</option>
+                           <option value = "Physics">2</option>
+                           <option value = "Physics">3</option>
+                           <option value = "Physics">4</option>
+                        </select>
+                        </form>
+                     </div>
+
+               <div class="reservation_date">
+                  <form action="/action_page.php">
+                    <div class="label">Reservation date:</div>
+                    <input type="date" name="bday"> -
+                    <input type="date" name="bday">
+                  </form>
+               </div>
+
+
+               <div class="label">Custom service</div>
+               <div class="adv">
+                           <input type = "checkbox" name = "breakfast" value = "on"> Breakfast<br>
+                           <input type = "checkbox" name = "skii transfer" value = "off"> Skii transfer<br>
+                           <input type = "checkbox" name = "gym and pool pass" value = "off"> Gym and pool pass<br>
+                           <input type = "checkbox" name = "fridge" value = "off"> Fridge<br>
+                           <input type = "checkbox" name = "skii pass" value = "off"> Skii pass<br>
+
+               </div>
+
+               </div>
+
+            <div>
+               Block 4
+            </div>
+
+         </div>
+      </div>
+
+   </body>
+	
+</html>
