@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hotel reservation</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="scripts.js"></script>
+   </head>
+	
+   <body>
+
+      <h3 title = "hotel" align = "center">Hotel reservation form</h3>
+      <div class="wrapper">
+          <!--TextBoxes-->
+            <div class="textbox_group">
+                <div><label for="fname">First name</label>
+                    <input id="fname" type = "text" name = "first_name" placeholder="name" align="start" />
+                </div>
+                <div><label for="lname">Last Name</label>
+                    <input id="lname" type = "text" name = "last_name" placeholder="second name" align="start"/>
+                </div>
+                <div><label for="password">Secret key  </label>
+                    <input id="password" type = "password" name = "password" placeholder="*********"/>
+                </div>
+             </section>
+
+          <!-- SexRadioButtons -->
+            <section class="sex group" >
+                <span><label class='label' align="start">Sex:</label></span>
+                <span><input type = "radio" name = "subject" value = "male">Male</span>
+                <span><input type = "radio" name = "subject" value = "female">Female</span>
+             </section>
+
+          <!-- Born Section -->
+
+            <section class="born" >
+                  <form action="/action_page.html">
+                    <span><label for="calendar">Birthday:</span>
+                    <input id="calendar" type="date" name="bday">
+                  </form>
+             </section>
+
+          <!-- Custom service -->
+          <div  class="custom_service"><span>Custom service</span>
+                       <input type = "checkbox" name = "breakfast" value = "on" checked="on" style="margin-left: 0.5%;"> Breakfast<br>
+                       <input type = "checkbox" name = "ski transfer" value = "off" style="margin-left: 12%;"> Ski transfer<br>
+                       <input type = "checkbox" name = "gym and pool pass" value = "off" style="margin-left: 12%;"> Gym and pool pass<br>
+                       <input type = "checkbox" name = "fridge" value = "off" style="margin-left: 12%;"> Fridge<br>
+                       <input type = "checkbox" name = "ski pass" value = "off" style="margin-left: 12%;"> Ski pass<br>
+                   </div>
+          </div>
+
+           <!-- Available_rooms -->
+          <section class="dropdown_available_rooms">
+                <span class="label" align="start">Rooms</span>
+                    <select name = "dropdown_available">
+                       <option value = "avail" selected>1</option>
+                       <option value = "av">2</option>
+                       <option value = "Physics">3</option>
+                       <option value = "Physics">4</option>
+                    </select>
+          </section>
+
+           <!-- Reservation dates -->
+          <section class="reservation_date">
+                  <form action="/action_page.php">
+                    <span class="label">Reservation date:</span>
+                    <input type="date" name="bday"> -
+                    <input type="date" name="bday">
+                  </form>
+          </section>
+
+           <!-- How did you hear about us -->
+          <section class="amenity"><span>How did you hear about us</span>
+                   <input type = "checkbox" name = "breakfast" value = "on" style="margin-left: 0.5%;"> Advert<br>
+                   <input type = "checkbox" name = "skii transfer" value = "off" checked="on" style="margin-left: 0.5%;"> Friend suggestion<br>
+                   <input type = "checkbox" name = "gym and pool pass" value = "off" style="margin-left: 0.5%;"> Other<br>
+
+          </section>
+
+
+      </div>
+
+
+   </body>
+	
+</html>
