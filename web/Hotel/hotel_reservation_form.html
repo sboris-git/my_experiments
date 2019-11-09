@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="grid-container">
+
+  <div class="header-item">
+    <h3>Hotel reservation form</h3>
+  </div>
+
+<!--TextBoxes-->
+  <div class="block1"><p></p></div> <!-- empty block -->
+
+  <div class="block2">
+    <label for="fname" >First name</label>
+  </div>
+
+  <div class="block3">
+    <input id="fname" type = "text" name = "first_name" placeholder="name" style="border-radius: 5px;"/>
+  </div>
+
+  <div class="block1"><p></p></div> <!-- empty block -->
+
+  <div class="block2">
+    <label for="lname">Last Name</label>
+  </div>
+
+  <div class="block3">
+    <input id="lname" type = "text" name = "last_name" placeholder="second name" style="border-radius: 5px;"/>
+  </div>
+
+  <div class="block1"><p></p></div> <!-- empty block -->
+
+  <div class="block2">
+    <label for="password">Secret key</label>
+  </div>
+
+  <div class="block3">
+    <input id="password" type = "password" name = "password" placeholder="*********" style="border-radius: 5px;">
+  </div>
+
+  <div class="block1"><p></p></div> <!-- empty block -->
+
+  <!-- SexRadioButtons -->
+  <div class="block2centered">
+    <label class='label'>Sex</label>
+  </div>
+
+  <div class="block3">
+    <span><input type = "radio" name = "subject" value = "male" checked>Male</span>
+    <span><input type = "radio" name = "subject" value = "female">Female</span>
+  </div>
+
+<!-- Born Section with validation range of dates from 1/1/1991-10/11/2019 -->
+  <div class="block5" >
+        <label for="calendar">Date of birth</label>
+  </div>
+
+  <div class="block3">
+        <input id="calendar" type="date" name="bday" min="1991-01-01" max="2019-11-10" required style="border-radius: 5px;">
+        <span class="validity"></span>
+  </div>
+
+<!-- Custom service -->
+  <div class="block6">
+    <span>Custom service</span>
+  </div>
+
+  <div class="block3">
+     <input type = "checkbox" name = "service" value = "Breakfast" checked="on" style="margin-left: 5%;">Breakfast<br>
+     <input type = "checkbox" name = "service" value = "Ski transfer" style="margin-left: 5%;">Ski transfer<br>
+     <input type = "checkbox" name = "service" value = "Gym and pool pass" style="margin-left: 5%;">Gym and pool pass<br>
+     <input type = "checkbox" name = "service" value = "Fridge" style="margin-left: 5%;">Fridge<br>
+     <input type = "checkbox" name = "service" value = "Ski pass" style="margin-left: 5%;">Ski pass<br>
+  </div>
+
+<!-- Available_rooms -->
+  <div class="block5">
+     <span class="label">Available rooms</span>
+  </div>
+
+  <div class="block3">
+    <select name = "dropdown_available" style="margin-left: 5%; border-radius: 5px;">
+       <option value = "none" disabled selected>Select</option>
+       <option value = "123">123</option>
+       <option value = "211">211</option>
+       <option value = "400">400</option>
+    </select>
+  </div>
+
+<!-- Reservation dates -->
+  <div class="block5">
+          <span class="label">Reservation dates</span>
+  </div>
+
+  <div class="block3">
+          <input type="date" id="inday" style="border-radius: 5px;" placeholder="check-in date" onfocus="(this.type='date')" onblur="(this.type='text')"> -
+          <input type="date" id="outday" style="border-radius: 5px;" placeholder="check-out date" onblur="(this.type='text')">
+          <!--<script>
+              document.getElementById('inday').value = moment().format('YYYY-MM-DD');
+          </script> -->
+  </div>
+
+<!-- How did you hear about us -->
+  <div class="block5">
+    <p>How did you hear about us?</p>
+  </div>
+
+  <div class="block3">
+    <div class="nested"><fieldset style="border-radius: 5px;">
+    <div><input type = "radio" name = "advert" value = "Advert" style="margin-left:5%;">Advert</div>
+    <div><input type = "radio" name = "advert" value = "Friend suggestion" checked="on" style="margin-left:5%;">Friend suggestion</div>
+    <div><input type = "radio" name = "advert" value = "Other" style="margin-left:5%;">Other</div>
+    </fieldset>
+    </div>
+    <div class="nested"></div>
+
+  </div>
+
+  <div class="header-item">
+      <form action="#"> <!-- this will send nothing to a server -->
+        <input type="submit" value="Submit reservation" style="border-radius: 5px;">
+      </form>
+  </div>
+
+</div>
+
+</body>
+</html>
