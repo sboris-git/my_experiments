@@ -1,0 +1,157 @@
+--CREATE DATABASE "Hotel"
+--    WITH 
+--    OWNER = postgres
+--    ENCODING = 'UTF8'
+--    LC_COLLATE = 'uk_UA.UTF-8'
+--    LC_CTYPE = 'uk_UA.UTF-8'
+--    TABLESPACE = pg_default
+--    CONNECTION LIMIT = -1;
+
+CREATE TABLE IF NOT EXISTS hotels(
+	hotelId serial PRIMARY KEY, 
+	hotel_name VARCHAR(255), 
+	foundation_year DATE,
+	address VARCHAR(255), 
+	is_active BOOLEAN);
+
+
+CREATE TABLE IF NOT EXISTS rooms
+(	
+	roomId serial PRIMARY KEY, 
+	room_name INT, 
+	price INT,
+	comfortId INT,
+	FOREIGN KEY (comfortId) REFERENCES comfort (comfortId) on DELETE CASCADE,
+	FOREIGN KEY (comfortId) REFERENCES comfort (comfortId) on UPDATE CASCADE,
+	capability INT, 
+	hotelID INT,
+	FOREIGN KEY (hotelId) REFERENCES hotels (hotelId) on UPDATE CASCADE,
+	FOREIGN KEY (hotelId) REFERENCES hotels (hotelId) on DELETE CASCADE 
+);
+
+CREATE TABLE IF NOT EXISTS users
+(	
+	userId serial PRIMARY KEY, 
+	username varchar(50), 
+	email varchar(50) 
+);
+
+CREATE TABLE IF NOT EXISTS reservation
+(	
+	reservationId serial PRIMARY KEY, 
+	date_of_reservation DATE, 
+	userId INT,
+	roomId INT,
+	FOREIGN KEY (userId) REFERENCES users (userId) on DELETE CASCADE,
+	FOREIGN KEY (userId) REFERENCES users (userId) on UPDATE CASCADE,
+	start_date_reservation DATE, 
+	end_date_reservation DATE,
+	FOREIGN KEY (roomId) REFERENCES rooms (roomId) on UPDATE CASCADE,
+	FOREIGN KEY (roomId) REFERENCES rooms (roomId) on DELETE CASCADE 
+);
+
+--3
+--https://www.postgresql.org/docs/9.4/functions-datetime.html
+UPDATE hotels
+SET foundation_year = (make_date(1900, date_part('MONTH', hotels.foundation_year)::INT, 
+						date_part('DAY', hotels.foundation_year)::INT))
+WHERE hotelid = ( 
+SELECT h.hotelid
+FROM hotels h
+WHERE date_part('YEAR', h.foundation_year) = (SELECT MIN(date_part('YEAR', hotels.foundation_year)) FROM hotels))
+
+--4
+DELETE FROM hotels WHERE hotelId=3;
+
+--6
+SELECT * FROM users WHERE username LIKE 'A%';
+
+--7
+INSERT INTO rooms(room_name, price, comfortid, capability, hotelid) 
+VALUES(1202,450.00,4,5,2),(1204,290.00,2,3,2),(1205,500.00,1,5,2);
+ 
+
+INSERT INTO rooms(room_name, price, comfortId, capability, hotelId)
+VALUES
+	('101', '50',
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('301', '50',
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('103', '50', 
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('103', '50',
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('104', '50',
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('105', '50',
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('106', '50',
+	 (SELECT comfortId FROM rooms WHERE comfortId=2),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	
+	('101', '50', 
+	 (SELECT comfortId FROM rooms WHERE comfortId=3),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=3)),
+	('103', '50', 
+	 (SELECT comfortId FROM rooms WHERE comfortId=1),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=1)),
+	('103', '50', 
+	 (SELECT comfortId FROM rooms WHERE comfortId=3),
+	 '3', 
+	 (SELECT hotelId FROM hotels WHERE hotelId=2))
+;
+
+--8
+SELECT * FROM rooms ORDER BY price;
+
+--9
+SELECT 
+	room_name, price
+FROM
+	hotels
+NATURAL JOIN rooms	
+WHERE hotel_name = 'Edelweiss'
+ORDER BY price;
+
+--10
+SELECT 
+	room_name, price, comfort_level
+FROM
+	(hotels NATURAL JOIN rooms)
+NATURAL JOIN comfort
+WHERE comfort_level = 3
+ORDER BY price;
+
+--11
+SELECT 
+	hotel_name, room_name, comfort_level
+FROM
+	(hotels NATURAL JOIN rooms)
+NATURAL JOIN comfort
+WHERE comfort_level = 1
+ORDER BY price;
+
+--12
+
+
+
+	;
+
+	;
+-- cast string to date
+-- SELECT to_date('2017 Feb 20','YYYY Mon DD');
