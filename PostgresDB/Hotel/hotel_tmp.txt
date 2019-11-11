@@ -147,9 +147,41 @@ WHERE comfort_level = 1
 ORDER BY price;
 
 --12
+SELECT 
+	hotel_name, COUNT(*)
+FROM
+	hotels NATURAL JOIN rooms
+GROUP BY hotel_name
+;
 
+--13
+--???
+insert into reservation (date_of_reservation, userid, roomid, start_date_reservation, end_date_reservation)
+values
+('11-11-2011', 1, 11, '02-02-2002', '04-02-2002'),
+('05-06-2007', 2, 12, '01-02-2003', '02-02-2003'),
+('04-05-2006', 3, 13, '15-09-2006', '18-09-2006'),
+('07-08-2009', 4, 14, '27-08-2009', '02-09-2009'),
+('10-11-2012', 5, 15, '12-11-2012', '13-11-2012'),
+('23-12-2015', 6, 16, '25-12-2015', '26-12-2015'),
+('26-07-2019', 7, 17, '26-07-2019', '27-07-2019'),
+('18-03-2018', 8, 18, '20-03-2018', '21-03-2018'),
+('13-02-2015', 9, 19, '20-02-2015', '25-02-2015'),
+('09-09-2009', 10, 20, '10-09-2009', '11-09-2009')
+;
 
-
+--14
+--???
+--Select Username, room number, reservation period.
+SELECT username, r.room_name, re.start_date_reservation, re.end_date_reservation 
+FROM 
+	(SELECT 
+		* 
+	 FROM 
+		rooms r
+	 NATURAL JOIN reservation re)
+NATURAL JOIN users
+;
 	;
 
 	;
