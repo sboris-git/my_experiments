@@ -1,12 +1,12 @@
 from collection import list_to_str
 
 
-def filter_7_5(*list_a):
+def filter_7_5():
 
-    list_a = [number for number in range(2000, 3200)]
+    list_a = [number for number in range(2000, 3201)]
 
     filter_obj = filter(lambda x: x % 7 == 0, filter(lambda x: x % 5 != 0, list_a))
-    string = list_to_str(filter_obj)
+    string = list_to_str(filter_obj, ', ')
 
     return print(string)
 
