@@ -1,4 +1,0 @@
-def bank():
-
-
-    return
