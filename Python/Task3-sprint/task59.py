@@ -6,11 +6,11 @@ def space_separated():
     pattern = re.compile(r'\d+')
     matches = pattern.findall(text)
 
-    return print(matches)
+    return matches
     # pattern = re.compile(r'(\d+)')
     # matches = pattern.finditer(text)
     # return print([match.group(0) for match in matches])
 
 
 # text = '2 cats and 30 dogs.'
-space_separated()
+print(space_separated())

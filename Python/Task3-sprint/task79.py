@@ -4,7 +4,7 @@ def rnd_n(start, end, elements):
     '''Question 79
     Please write a program to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
     '''
-    lst = [i / 100 for i in range(start*10, (end+1)*10) if i % 2 == 0]  # extending range to float
+    lst = [i / 100 for i in range(start * 10, (end + 1) * 10) if i % 2 == 0]  # extending range to float
     lst_random = ['{:.2f}'.format(random.choice(lst)) for i in range(elements)]
     return lst_random
 

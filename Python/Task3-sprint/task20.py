@@ -1,6 +1,6 @@
 class Gen:
     def gener(self, x):
-        return [number for number in range(x) if number%7==0]
+        return [number for number in range(x) if number % 7 == 0]
 
 n = 100
 num = Gen()

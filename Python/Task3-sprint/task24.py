@@ -1,23 +1,15 @@
-from pip._vendor.distlib.compat import raw_input
-
-
 def tuple_driver():
-    ''' This is driver function tuple_driver() for sorting a list of tuples '''
-
-    tupl_list = [('Tom', 19, 80),
-                 ('John', 20, 90),
-                 ('Jony', 17, 91),
-                 ('Jony', 17, 93),
-                 ('Json', 21, 85)]
-    tupl_list.sort(key=lambda x: (x[0], x[1], x[2]))
-    return print(tupl_list)
+    ''' This is driver function tuple_driver() for sorting a list of tuples
+    the function is given as an example of __doc__ '''
+    pass
 
 
 def docs():
-    print(abs.__doc__)
-    print(int.__doc__)
-    print(raw_input.__doc__)
-    print(tuple_driver.__doc__)
+    abs_doc = abs.__doc__
+    int_doc = int.__doc__
+    input_doc = input.__doc__
+    tuple_driver_doc = tuple_driver.__doc__
+    rep = [abs_doc, int_doc, input_doc, tuple_driver_doc]
+    return rep
 
-
-docs()
+print(docs())

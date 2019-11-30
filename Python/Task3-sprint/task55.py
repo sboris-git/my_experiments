@@ -1,7 +1,7 @@
 def div_0(a, b):
 
     try:
-        c = a/b
+        c = a / b
     except ZeroDivisionError:
         print("You can't divide by zero!")
         c = None
@@ -9,4 +9,4 @@ def div_0(a, b):
     return c
 
 
-print(div_0(5,0))
+print(div_0(5, 0))

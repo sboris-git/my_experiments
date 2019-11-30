@@ -1,7 +1,7 @@
-import zlib
 import bz2
 
 
+# import zlib
 def compress(text):
     '''Question 82
     Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".'''

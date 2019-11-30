@@ -13,7 +13,7 @@ def cycle():
     lst = []
     [lst.append(str(num)) for num in even_num_gen(n)]
 
-    return print(list_to_str(lst, ','))
+    return list_to_str(lst, ',')
 
 
-cycle()
+print(cycle())

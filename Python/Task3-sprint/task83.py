@@ -1,10 +1,12 @@
-import zlib
-import bz2
-
-def comptest(s):
-    print( 'original length:', len(s))
-    print( 'zlib compressed length:', len(zlib.compress(s)))
-    print( 'bz2 compressed length:', len(bz2.compress(s)))
+import timeit
 
 
-comptest(b'asfsfcws wefwef eferge'.decode('utf-8'))
+'''Question 83
+Please write a program to print the running time of execution of "1+1" for 100 times.'''
+
+code_to_test = """
+a = 1+1
+"""
+elapsed_time = timeit.timeit(code_to_test, number=100)
+
+print(elapsed_time)

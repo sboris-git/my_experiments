@@ -4,7 +4,7 @@ class Number:
         self.num = num
 
     def square(self):
-        return self.num**2
+        return self.num ** 2
 
 
 obj = Number(5)

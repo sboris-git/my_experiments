@@ -1,4 +1,4 @@
-def calc(*n):
+def calc(n=None):
     '''Write a program to compute 1/2+2/3+3/4+...+n/n+1 with a given n input by console (n>0).
 
     Example:
@@ -12,7 +12,7 @@ def calc(*n):
     sum = 0.0
     for number in range(1, n + 1):
         sum += float(number / (number + 1))
-    print(sum)
+    return round(sum, 2)
 
 
-calc()
+print(calc())

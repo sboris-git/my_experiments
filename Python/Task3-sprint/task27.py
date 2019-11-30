@@ -1,5 +1,5 @@
 def int_into_str(num):
-    return print(str(num))
+    return str(num)
 
 
-int_into_str(53)
+print(int_into_str(53))

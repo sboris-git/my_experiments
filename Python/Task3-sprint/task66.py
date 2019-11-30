@@ -1,3 +1,3 @@
 from task65 import cycle
 
-cycle()
+print(cycle())

@@ -27,8 +27,8 @@ def validation(pswd):
     else:
         valid_pswd.append(valid_pswd)
 
-    return print(list_to_str(valid_pswd))  # ToDo , ','
+    return list_to_str(valid_pswd)  # ToDo , ','
 
 
 pass_list = ['ABd1234@1', 'a F1#', '2w3E*', '2We3345']
-validation(pass_list)
+print(validation(pass_list))

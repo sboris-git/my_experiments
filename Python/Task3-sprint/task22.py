@@ -9,7 +9,7 @@ def freq():
     for k, v in sorted(cnt_dict.items()):
         print('{}:{}'.format(k, v))
 
-    return
+    return sorted(cnt_dict.items())
 
 
 # New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3

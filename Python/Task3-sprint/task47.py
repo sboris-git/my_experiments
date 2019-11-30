@@ -1,6 +1,6 @@
 def map_filt_sqr(list_a):
 
-    sqr = list(map(lambda x: x ** 2, list(filter(lambda x: x%2==0, list_a))))
+    sqr = list(map(lambda x: x ** 2, list(filter(lambda x: x % 2 == 0, list_a))))
 
     return print(sqr)
 

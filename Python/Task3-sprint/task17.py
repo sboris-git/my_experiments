@@ -15,9 +15,9 @@ def bank():
         elif 'W' in item:
             net -= int(item.strip('W '))
 
-    return print(net)
+    return net
 
-bank()
+print(bank())
 # ['D 100', 'W 200', 'D 300', 'D 300', 'W 200', 'D 100']
 # 400
 

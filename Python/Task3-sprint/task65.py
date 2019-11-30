@@ -9,8 +9,8 @@ def f(n):
 def cycle():
     n = int(input('n= '))
     res = [f(i) for i in range(n+1)]
-    return print(res[-1])
+    return res[-1]
 
 
 if __name__ == '__main__':
-    cycle()
+    print(cycle())
