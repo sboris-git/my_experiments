@@ -8,8 +8,8 @@ def count_alpha_num(text):
         elif char.isalpha():
             alpha += 1
 
-    return print('LETTERS {} \nDIGITS {}'.format(alpha, digits))
+    return 'LETTERS {} \nDIGITS {}'.format(alpha, digits)
 
-count_alpha_num('hello world! 123')
+print(count_alpha_num('hello world! 123'))
 
 

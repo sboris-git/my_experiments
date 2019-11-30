@@ -1,6 +1,7 @@
 def compute(n):
     list_str = 'a+aa+aaa+aaaa'.replace('a', str(n)).split('+')
-    return print(sum([int(elem) for elem in list_str]))
+    ans = sum([int(elem) for elem in list_str])
+    return ans
 # sum([int(elem) for elem in 'a+aa+aaa+aaaa'.replace('a', '8').split('+')])
 
-compute(9)
+print(compute(9))

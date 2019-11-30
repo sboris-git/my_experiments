@@ -8,6 +8,6 @@ def count_upper_lower(text):
         elif char.islower():
             lower += 1
 
-    return print('UPPER CASE {} \nLOWER CASE {}'.format(upper, lower))
+    return 'UPPER CASE {} \nLOWER CASE {}'.format(upper, lower)
 
-count_upper_lower('Hello world!')
+print(count_upper_lower('Hello world!'))

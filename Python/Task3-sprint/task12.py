@@ -5,6 +5,6 @@ def even_digits(x, y):
     filter_obj = filter(lambda x: x % 2 == 0, list)
     string = list_to_str(filter_obj, ',')
 
-    return print(string)
+    return string
 
-even_digits(1000,3000)
+print(even_digits(1000,3000))
