@@ -10,8 +10,10 @@ def calc(n=None):
 
     n = int(input('type n: '))
     sum = 0.0
+
     for number in range(1, n + 1):
         sum += float(number / (number + 1))
+
     return round(sum, 2)
 
 

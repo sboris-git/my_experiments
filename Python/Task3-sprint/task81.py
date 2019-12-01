@@ -8,4 +8,5 @@ def rnd_n():
     n_random = random.choice([i for i in range(7, 16)])
     return n_random
 
+
 print(rnd_n())

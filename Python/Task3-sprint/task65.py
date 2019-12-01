@@ -4,11 +4,11 @@ def f(n):
     elif n == 1:
         return 1
     else:
-        return f(n-1)+f(n-2)
+        return f(n - 1)+f(n - 2)
 
 def cycle():
     n = int(input('n= '))
-    res = [f(i) for i in range(n+1)]
+    res = [f(i) for i in range(n + 1)]
     return res[-1]
 
 

@@ -1,5 +1,5 @@
 import random
-from collection import list_to_str
+from modul import list_to_str
 
 
 def rnd_35(start, end, elements):
@@ -10,6 +10,7 @@ def rnd_35(start, end, elements):
     lst = [i / 100 for i in range(start * 100, (end + 1) * 100) if i % 35 == 0]
     lst_random = [random.choice(lst) for i in range(elements)]
     ans = list_to_str(lst_random, ', ')
+
     return ans
 
 

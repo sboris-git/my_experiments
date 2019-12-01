@@ -19,9 +19,11 @@ def freq(lst=None):
     list_chars = list(string)
     set_letter = set(list_chars)
     cnt_dict = {letter: list_chars.count(letter) for letter in set_letter}
+
     for k, v in sorted(cnt_dict.items()):
         print('{},{}'.format(k, v))
 
     return sorted(cnt_dict.items())
+
 
 freq()

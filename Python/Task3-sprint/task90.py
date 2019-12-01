@@ -10,6 +10,6 @@ def matrix():
 
 
 for slice in matrix():
-    print('-' * 10 )
+    print('-' * 10)
     for flat in slice:
         print(flat)

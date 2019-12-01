@@ -16,12 +16,13 @@ def freq():
         choosing:1
         or:2
         to:1'''
+
     string = input('Type a string: ')
     list_word = string.split()
     set_word = set(list_word)
     cnt_dict = {word: list_word.count(word) for word in set_word}
-    print(cnt_dict)
-    # res = dict(zip(list(word), list_word.count(word)))
+    # print(cnt_dict)
+
     for k, v in sorted(cnt_dict.items()):
         print('{}:{}'.format(k, v))
 

@@ -9,4 +9,4 @@ def cycle():
     return res[-1]
 
 print(cycle())
-#  tasks 64-66 resonable to try decorating instead cycle. ToDo
+#  tasks 64-66 resonable to try decorating instead a cycle. ToDo

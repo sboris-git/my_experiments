@@ -16,7 +16,7 @@ def half_div_search(a, target):
     else:
         return -1
 
+if __name__ == '__main__':
+    sequence = [1, 25, 4, 6, 8, 10, 46, 1, 5]
 
-sequence = [1, 25, 4, 6, 8, 10, 46, 1, 5]
-
-print(half_div_search(sequence, 3))
+    print(half_div_search(sequence, 6))

@@ -8,6 +8,8 @@ def rnd_35():
 
     even_random = random.choice([i / 100 for i in range(1100) if i % 35 == 0])  # extending range to float
     even_random = '{:.2f}'.format(even_random)
+
     return even_random
+
 
 print(rnd_35())

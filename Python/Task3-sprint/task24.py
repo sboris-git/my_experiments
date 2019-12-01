@@ -1,6 +1,9 @@
 def tuple_driver():
     ''' This is driver function tuple_driver() for sorting a list of tuples
-    the function is given as an example of __doc__ '''
+    the function is given as an example of __doc__
+    The output is a list
+    [abs_doc, int_doc, input_doc, tuple_driver_doc]
+    '''
     pass
 
 

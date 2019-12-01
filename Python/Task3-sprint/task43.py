@@ -1,6 +1,7 @@
 def tuple_even(tup):
 
-    a = tuple(i for i in range(len(tup) + 1) if i%2==0)
+    a = tuple(i for i in range(len(tup) + 1) if i % 2 == 0)
+
     return a
 
 

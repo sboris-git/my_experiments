@@ -1,4 +1,4 @@
-from collection import *
+from modul import *
 
 def factorial(n):
 
@@ -7,11 +7,17 @@ def factorial(n):
     else:
         return n*factorial(n-1)
 
-in_str = input('Type a coma delimited numbers')
-# in_str = '2, 4, 6, 8, 1'
+def run():
 
-numbers = [int(item) for item in in_str.split(',')]
-print(list_to_str([factorial(item) for item in numbers], ', '))
+    in_str = input('Type a coma delimited numbers')
+    # in_str = '2, 4, 6, 8, 1'
+
+    numbers = [int(item) for item in in_str.split(',')]
+    ans = list_to_str([factorial(item) for item in numbers], ', ')
+
+    return ans
+
+print(run())
 
 
 

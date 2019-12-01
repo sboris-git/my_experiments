@@ -12,7 +12,7 @@ from collection import list_to_str
 def num_gen(n):
     i = 0
     while i <= n:
-        if i%5 == 0 and i%7 == 0:  # i % 35 == 0
+        if i % 5 == 0 and i % 7 == 0:  # i % 35 == 0
             yield i
         i += 1
 

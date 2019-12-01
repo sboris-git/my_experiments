@@ -4,14 +4,17 @@ class Five:
         self.string = ""
 
     @classmethod
-    def input(self):
-        self.string = input('Type a string')
+    def input(cls):
+        cls.string = input('Type a string')
 
     @classmethod
-    def to_upper(self):
-        print(self.string.upper())
+    def to_upper(cls):
+        print(cls.string.upper())
 
 
-five = Five
-five.input()
-five.to_upper()
+# five = Five()
+# five.input()
+# five.to_upper()
+#
+Five.input()
+Five.to_upper()

@@ -1,4 +1,4 @@
-from collection import list_to_str
+from modul import list_to_str
 
 
 def even_num_gen(n):

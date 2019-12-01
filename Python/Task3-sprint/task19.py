@@ -7,7 +7,9 @@ def tuple_driver():
                 ('Jony', 17, 91),
                 ('Jony', 17, 93),
                 ('Json', 21, 85)]
+
     tupl_list.sort(key=lambda x: (x[0], x[1], x[2]))
+
     return tupl_list
 
 

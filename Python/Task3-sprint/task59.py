@@ -1,7 +1,7 @@
 import re
 
 
-def space_separated():
+def spaceSeparated():
     text = input('Type a text: ')
     pattern = re.compile(r'\d+')
     matches = pattern.findall(text)
@@ -13,4 +13,4 @@ def space_separated():
 
 
 # text = '2 cats and 30 dogs.'
-print(space_separated())
+print(spaceSeparated())

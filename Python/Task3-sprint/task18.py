@@ -1,16 +1,18 @@
 import re
-from collection import list_to_str
+from modul import list_to_str
 
 
 def check(text):
 
     valid = None
     tmp_list = []
+
     if 6 <= len(text) <= 12:
         tmp_list.append(bool(re.search("[a-z]", text)))
         tmp_list.append(bool(re.search("[A-Z]", text)))
         tmp_list.append(bool(re.search("[0-9]", text)))
         tmp_list.append(bool(re.search("[$#@]", text)))
+
     if tmp_list.count(True) >= 4:
         valid = text
 
@@ -20,6 +22,7 @@ def check(text):
 def validation(pswd):
 
     valid_pswd = []
+
     if isinstance(pswd, list):
         for passwrd in pswd:
             if check(passwrd) is not None:

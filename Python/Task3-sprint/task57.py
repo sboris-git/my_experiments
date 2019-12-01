@@ -1,5 +1,3 @@
-import re
-
 def user():
 
     email = input('type the email: ')

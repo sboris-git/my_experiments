@@ -1,4 +1,4 @@
-class Rectangle():
+class Rectangle:
 
     def __init__(self, lengt, width):
         self.lengt = lengt

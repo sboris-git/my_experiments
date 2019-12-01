@@ -8,6 +8,7 @@ def rnd(start, end):
 
     return number
 
+
 if __name__ == '__main__':
     print(rnd(10, 100))
 
