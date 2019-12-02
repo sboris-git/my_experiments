@@ -162,7 +162,7 @@ def n_8(csv_string=None):
     bag,hello,without,world
     '''
 
-    list_string = input('type csv string ').split(',')
+    list_string = 'without,hello,bag,world'  # input('type csv string ').split(',')
     list_str = sorted(list_string)
     list_str = list_to_str(list_str, ',')
 
