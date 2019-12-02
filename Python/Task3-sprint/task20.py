@@ -1,7 +1,11 @@
 class Gen:
 
     def gener(self, x):
-        return [number for number in range(x) if number % 7 == 0]
+        for number in range(x):
+            if number % 7 == 0:
+                yield number
+        return number
+
 
 n = 100
 num = Gen()
