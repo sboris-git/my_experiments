@@ -8,8 +8,8 @@ def even_num_gen(n):
             yield i
         i += 1
 
-def cycle():
-    n = int(input('n: '))
+def cycle(n):
+    # n = int(input('n: '))
     lst = []
     [lst.append(str(num)) for num in even_num_gen(n)]
 

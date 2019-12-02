@@ -1,6 +1,6 @@
 def text_to_unicode(text):
     '''Reads an ASCII string and converts it to a unicode string encoded by utf-8.'''
-
+    text.decode('UTF-8')
     return text.encode('UTF-8')
 
 

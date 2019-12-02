@@ -6,8 +6,8 @@ def f(n):
     else:
         return f(n - 1)+f(n - 2)
 
-def cycle():
-    n = int(input('n= '))
+def cycle(n):
+    # n = int(input('n= '))
     res = [f(i) for i in range(n + 1)]
     return res[-1]
 

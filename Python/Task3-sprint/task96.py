@@ -1,4 +1,4 @@
-def freq(lst=None):
+def freq(string):
     '''Question 96
     Please write a program which count and print the numbers of each character in a string input by console.
 
@@ -15,7 +15,7 @@ def freq(lst=None):
         f,1
     '''
 
-    string = input('Type a string: ')
+    # string = input('Type a string: ')
     list_chars = list(string)
     set_letter = set(list_chars)
     cnt_dict = {letter: list_chars.count(letter) for letter in set_letter}
