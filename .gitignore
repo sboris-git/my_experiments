@@ -2,6 +2,6 @@ venv/*
 venv_sb/*
 .vscode/*
 geckodriver.log
-sql_test/Python/Task3-sprint/venv/*
-sql_test/Python/Task3-sprint/.idea/*
+Python/Task3-sprint/venv/*
+Python/Task3-sprint/.idea/*
 .idea/*
