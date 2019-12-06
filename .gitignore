@@ -5,3 +5,7 @@ geckodriver.log
 sql_test/Python/Task3-sprint/venv/*
 sql_test/Python/Task3-sprint/.idea/*
 .idea/*
+Selenium/venv/*
+Selenium\venv\*
+Selenium\chromedriver
+
