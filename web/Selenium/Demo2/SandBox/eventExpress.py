@@ -59,7 +59,8 @@ class TestTasks(unittest.TestCase):
 
         print("Locating a Sign in button and clicking it...")
         # text = 'Sign In'
-        css_sel = "body > div.MuiDialog-root > div.MuiDialog-container.MuiDialog-scrollPaper > div > div > div.MuiTypography-root.MuiTypography-body1 > div > div.auth > form > div:nth-child(3) > div > button:nth-child(2)"
+        css_sel = "[value~='Login']"
+        # "body > div.MuiDialog-root > div.MuiDialog-container.MuiDialog-scrollPaper > div > div > div.MuiTypography-root.MuiTypography-body1 > div > div.auth > form > div:nth-child(3) > div > button:nth-child(2)"
 
         self.driver.find_element_by_css_selector(css_sel).click()
 
