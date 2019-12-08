@@ -5,3 +5,6 @@ geckodriver.log
 Python/Task3-sprint/venv/*
 Python/Task3-sprint/.idea/*
 .idea/*
+Selenium\venv\*
+Selenium\chromedriver
+
