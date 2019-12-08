@@ -1,0 +1,49 @@
+https://www.tutorialspoint.com/unittest_framework/unittest_framework_skip_test.htm
+ul.toc.chapters:nth-of-type(1) li:nth-of-type(3)
+ul.toc.chapters:first-of-type li:nth-child(3)
+
+<a href="/unittest_framework/unittest_framework_overview.htm">UnitTest Framework - Overview</a>
+
+body > div.mui-container-fluid.content > div > div.mui-col-md-3.tutorial-toc > div.mini-logo > img
+img[src*="logo"][alt*='Unit']
+img[alt*='Unit']
+
+ div.mui-container-fluid.content img
+ div.mui-container-fluid.content  div.mui-col-md-3.tutorial-toc  img
+
+i.fa.fa-th-large
+
+
+body > div.mui-container-fluid.content > div > div.mui-col-md-6.tutorial-content > div:nth-child(5) > div.nxt-btn.nd___highlighted
+div[class*='ads']+[class*='mui-container-fluid'] div[class*='nxt']
+div[class*='ads']+[class*='fluid'] div[class*='nxt']
+[class*='ads']+[class*='fluid'] [class*='nxt']
+[class*='ads']+[class*='fluid'] .nxt-btn
+div:nth-child(5) > .nxt-btn
+.mui-container-fluid:nth-child(5) > .nxt-btn
+
+
+
+[class*='ads']+[class*='fluid'] [class*='circle-right']
+[class*='ads']+[class*='fluid'] [class*='circle']
+div.mui-container-fluid .nxt-btn>a
+
+div[class*='show'] .nxt-btn
+
+
+div[class*='show'] i.fal.fa-chevron-circle-right:nth-child(1)
+
+[class*='button']>.nxt-btn
+
+[class*='mui-container-fluid']
+
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="/unittest_framework/unittest_framework_test_discovery.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn nd___highlighted" style="outline: rgb(204, 0, 0) dashed 2px;">
+<a href="/unittest_framework/unittest_framework_exceptions_test.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+
+<a href="/unittest_framework/unittest_framework_exceptions_test.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
